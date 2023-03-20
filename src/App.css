@@ -1,38 +1,100 @@
-.App {
+/* General code */
+body{
+  background-color: #1D1F20;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: rgba(255, 255, 255, 0.925);
+}
+
+/* Top bar and welcome section */
+.navbar{
+  text-align: right;
+  margin-top: 2%;
+  margin-right: 4%;
+  color: deepskyblue;
+}
+
+.resume-button, .email{
+  border-style: solid;
+  border-width: 0.05cm;
+  border-radius: 7%;
+  padding: 0.25%;
+  text-decoration: none;
+}
+
+.resume-button:hover, .email:hover{
+  background-color: rgba(0, 191, 255, 0.616);
+  opacity: 0.9;
+  color: #1D1F20;
+  border-radius: 7%;
+  transition-duration: 0.3s;
+}
+
+a:visited, a{
+  text-decoration: none;
+  font-size: large;  
+  color: inherit;
+}
+
+.h5{
+  margin-right: 2%;
+}
+
+.welcome{
+  display: block;
   text-align: center;
+  font-size: x-large;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.925);
+  margin-top: 15%;
+  padding-right: 30%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.intro{
+  font-weight: 100;
+  padding-left: 39%;
+  padding-right: 20%;
+  font-size:medium;
+  position: inherit;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Body of the page */
+
+.about {
+  font-size: large;
+  position: absolute;
+  margin-top: 16%;
+  padding-right: 50%;
+  margin-left: 25%;
+  
   }
+
+.portrait {
+  display: block;
+  position: absolute;
+  margin-left: 45%;
+  border-radius: 20%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.me {
+  font-weight: bold;
+  display: inline;
+  text-decoration: underline;
 }
 
-.App-link {
-  color: #61dafb;
+.text {
+  display: inline;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Sidebar */
+.social{
+  position: fixed;
+  width: 2%;
+  margin-left: 1%;
+  margin-top: 10%;
+  color: rgb(255, 255, 255);
+}
+
+.linked:hover, .git:hover{
+  opacity: 0.5;
+  transition-duration: 0.3s;
 }
