@@ -1,11 +1,26 @@
 /* General code */
 body{
   background-color: #1D1F20;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family:'Ubuntu Condensed' Tahoma, sans-serif;
   color: rgba(255, 255, 255, 0.925);
 }
 
 /* Top bar and welcome section */
+
+.logo{
+  width: 2%;
+  height:auto;
+  margin-left: 1.7%;
+}
+
+.logo:hover{
+  opacity: 0.9;
+  color: #1D1F20;
+  border-radius: 7%;
+  transition-duration: 0.3s;
+  
+}
+
 .navbar{
   text-align: right;
   margin-top: 2%;
@@ -46,16 +61,33 @@ a:visited, a{
   font-weight: bold;
   color: rgba(255, 255, 255, 0.925);
   margin-top: 15%;
-  padding-right: 30%;
+  padding-right: 45%;
+
+  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 3s; /* Firefox < 16 */
+        -ms-animation: fadein 3s; /* Internet Explorer */
+         -o-animation: fadein 3s; /* Opera < 12.1 */
+            animation: fadein 3s;
 }
 
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+
+
 .intro{
-  font-weight: 100;
-  padding-left: 39%;
-  padding-right: 20%;
-  font-size:medium;
+  font-weight:lighter;
+  padding-left: 38%;
+  padding-right: 6%;
+  font-size:large;
   position: inherit;
 }
+
+
+
+
 
 /* Body of the page */
 

@@ -1,16 +1,17 @@
 import './App.css';
-import './BlogPage'
+import './BlogPage';
 
 function App() {
   return (
     <div className="App">
       <head>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+      <link rel='shortcut icon' type='image/x-icon' href='https://res.cloudinary.com/dxgndie5o/image/upload/v1679644058/unnamed_lx4swa.png'/>
       </head>
       <body>
-        
         <header>
           <nav className="navbar">
+            <img align='left' className='logo' src='https://res.cloudinary.com/dxgndie5o/image/upload/v1679644058/unnamed_lx4swa.png' alt='logo' /> 
             <span className='links'>
               <a className='home' href='C:\Users\riley\OneDrive\Desktop\personal web\my-webpage\src\App.js'>Home</a> &nbsp; 
               <a className='blogpage' href='C:\Users\riley\OneDrive\Desktop\personal web\my-webpage\src\BlogPage.js'>Blog</a> &nbsp; 
@@ -26,12 +27,13 @@ function App() {
             </span> 
         </header>
         <div className='about'>
-          <img className='portrait' src='https://res.cloudinary.com/dxgndie5o/image/upload/c_limit,q_82,r_0,w_328/v1679037684/itsme-min_s38bgg.jpg' alt='me in hawaii!'/> 
+          <img className='portrait' src='https://res.cloudinary.com/dxgndie5o/image/upload/c_limit,q_82,r_0,w_328/v1679037684/itsme-min_s38bgg.jpg' alt='me in hawaii'/> 
           <h2 className='me'>About me</h2>
           <span className='text'>
-            <p>I started learning coding as a whole through web development first, and transitioned to more data-centric development after I took a data science class</p>
+            <p>Current Data Science student at WGU based in Washington state, with 2 years of web development experience working on projects.</p>
+            <p>I started learning coding as a whole through web development first, and transitioned to more data-centric development after I took a data science class.</p>
+            <p>I really enjoy data-based projects because there are datasets for everything, from daily prices of a fruit to most streamed songs of all time.  </p> 
             <p>In my free time, I enjoy other hobbies such as cooking, playing with my pets, video games, and snowboarding.</p> 
-            
             </span>
         </div>
         <div className='social' >
