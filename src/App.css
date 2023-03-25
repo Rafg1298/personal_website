@@ -75,8 +75,6 @@ a:visited, a{
   to   { opacity: 1; }
 }
 
-
-
 .intro{
   font-weight:lighter;
   padding-left: 38%;
@@ -85,36 +83,68 @@ a:visited, a{
   position: inherit;
 }
 
-
-
-
-
 /* Body of the page */
 
-.about {
+.summary{
   font-size: large;
   position: absolute;
   margin-top: 16%;
   padding-right: 50%;
   margin-left: 25%;
-  
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
   }
 
-.portrait {
+.summary.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+.portrait{
   display: block;
   position: absolute;
   margin-left: 45%;
   border-radius: 20%;
 }
 
-.me {
+.me{
   font-weight: bold;
   display: inline;
   text-decoration: underline;
 }
 
-.text {
+.text{
   display: inline;
+}
+
+
+/* Article Cards */
+
+.article-card{
+  background-color: #1D1F20;
+}
+
+.card{
+  display: flex;
+  margin-top: 55%;
+  margin-left: 19%;
+  margin-bottom: 1%;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.card.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.card-1, .card-2, .card-3{
+  margin-left: 2%;
+  padding: 5px;
+  border: 1px solid #080b0c;
 }
 
 /* Sidebar */

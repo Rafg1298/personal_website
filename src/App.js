@@ -1,5 +1,44 @@
 import './App.css';
 import './BlogPage';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Typography from '@mui/material/Typography';
+import { CardActionArea } from '@mui/material';
+
+
+function show() {
+  var reveals = document.querySelectorAll('.summary');
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 100;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+function reveal() {
+  var reveals = document.querySelectorAll('.card');
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 100;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
 
 function App() {
   return (
@@ -27,14 +66,16 @@ function App() {
             </span> 
         </header>
         <div className='about'>
+          <div className='summary'>
           <img className='portrait' src='https://res.cloudinary.com/dxgndie5o/image/upload/c_limit,q_82,r_0,w_328/v1679037684/itsme-min_s38bgg.jpg' alt='me in hawaii'/> 
           <h2 className='me'>About me</h2>
           <span className='text'>
-            <p>Current Data Science student at WGU based in Washington state, with 2 years of web development experience working on projects.</p>
+            <p>Current Data Science student based in Washington state, with 2 years of web development experience working on projects.</p>
             <p>I started learning coding as a whole through web development first, and transitioned to more data-centric development after I took a data science class.</p>
             <p>I really enjoy data-based projects because there are datasets for everything, from daily prices of a fruit to most streamed songs of all time.  </p> 
             <p>In my free time, I enjoy other hobbies such as cooking, playing with my pets, video games, and snowboarding.</p> 
             </span>
+          </div>
         </div>
         <div className='social' >
           <a className='linked' href='https://www.linkedin.com/in/rileygolden/' target='_blank' rel='noreferrer'>
@@ -56,10 +97,67 @@ function App() {
         </div>
       </body>
       <footer>
+        <div className='card'>
+        <section className='card-1'>
+          <Card sx={{ maxWidth: 345 }}>
+            <CardActionArea>
+            <CardMedia  component="img" height="140" image="https://res.cloudinary.com/dxgndie5o/image/upload/v1679728282/graph_t4uxku.png" alt="green iguana"/>
+            <CardContent className='article-card'>
+              <Typography gutterBottom variant="h5" component="div" color="white">
+                  Lizard
+              </Typography>
+              <Typography variant="body2" color="white">
+                  Lizards are a widespread group of squamate reptiles, with over 6,000
+                  species, ranging across all continents except Antarctica
+              </Typography>
+            </CardContent>
+            </CardActionArea>
+          </Card>
+        </section>
+        
+        <section className='card-2'>
+          <Card sx={{ maxWidth: 345 }}>
+            <CardActionArea>
+            <CardMedia component="img" height="140" image="https://res.cloudinary.com/dxgndie5o/image/upload/v1679728282/graph_t4uxku.png" alt="green iguana"/>
+            <CardContent className='article-card'>
+              <Typography gutterBottom variant="h5" component="div" color="white">
+                  Lizard
+              </Typography>
+              <Typography variant="body2" color="white">
+                  Lizards are a widespread group of squamate reptiles, with over 6,000
+                  species, ranging across all continents except Antarctica
+              </Typography>
+            </CardContent>
+            </CardActionArea>
+          </Card>
+        </section>
 
+        <section className='card-3'>
+          <Card sx={{ maxWidth: 345 }}>
+            <CardActionArea>
+            <CardMedia component="img" height="140" image="https://res.cloudinary.com/dxgndie5o/image/upload/v1679728282/graph_t4uxku.png" alt="green iguana"/>
+            <CardContent className='article-card'>
+              <Typography gutterBottom variant="h5" component="div" color="white">
+                  Lizard
+              </Typography>
+              <Typography variant="body2" color="white">
+                  Lizards are a widespread group of squamate reptiles, with over 6,000
+                  species, ranging across all continents except Antarctica
+              </Typography>
+            </CardContent>
+            </CardActionArea>
+          </Card> 
+        </section>
+        </div>
+       
         </footer>
     </div>
   );
 }
+
+
+
+window.addEventListener("scroll", reveal);
+window.addEventListener("scroll", show);
 
 export default App;
