@@ -54,12 +54,12 @@ function App() {
             <span className='links'>
               <a className='home' href='C:\Users\riley\OneDrive\Desktop\personal web\my-webpage\src\App.js'>Home</a> &nbsp; 
               <a className='blogpage' href='C:\Users\riley\OneDrive\Desktop\personal web\my-webpage\src\BlogPage.js'>Blog</a> &nbsp; 
-              <a className='resume-button' href='my-webpage\public\Riley_Resume.pdf' target='_blank' rel='noopener noreferrer'>Resume</a> &nbsp; 
+              <a className='resume-button' href='C:\Users\riley\OneDrive\Desktop\personal web\my-webpage\public\Riley_Resume.pdf' target='_blank' rel=''>Resume</a> &nbsp; 
               <a className='email' href='mailto:riley9460@gmail.com'>Contact me</a>
             </span>
           </nav>
           <span className='welcome'>
-            <h5 className='h5'>Hi there, my name is </h5>
+            <h5 className='h5'>Hi there, my name is</h5>
             <h2>Riley Golden</h2>
             <p className='intro'>I am currently a Data Science student at Western Governors University, learning and posting my projects consisting of web design to data jupyter notebooks here on my website!</p>
             
@@ -100,7 +100,7 @@ function App() {
         <div className='card'>
         <section className='card-1'>
           <Card sx={{ maxWidth: 345 }}>
-            <CardActionArea>
+            <CardActionArea href='#' target='_blank'>
             <CardMedia  component="img" height="140" image="https://res.cloudinary.com/dxgndie5o/image/upload/v1679728282/graph_t4uxku.png" alt="green iguana"/>
             <CardContent className='article-card'>
               <Typography gutterBottom variant="h5" component="div" color="white">
@@ -117,7 +117,7 @@ function App() {
         
         <section className='card-2'>
           <Card sx={{ maxWidth: 345 }}>
-            <CardActionArea>
+            <CardActionArea href='#' target='_blank'>
             <CardMedia component="img" height="140" image="https://res.cloudinary.com/dxgndie5o/image/upload/v1679728282/graph_t4uxku.png" alt="green iguana"/>
             <CardContent className='article-card'>
               <Typography gutterBottom variant="h5" component="div" color="white">
@@ -134,7 +134,7 @@ function App() {
 
         <section className='card-3'>
           <Card sx={{ maxWidth: 345 }}>
-            <CardActionArea>
+            <CardActionArea href='#' target='_blank'>
             <CardMedia component="img" height="140" image="https://res.cloudinary.com/dxgndie5o/image/upload/v1679728282/graph_t4uxku.png" alt="green iguana"/>
             <CardContent className='article-card'>
               <Typography gutterBottom variant="h5" component="div" color="white">
