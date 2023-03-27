@@ -39,7 +39,6 @@ function reveal() {
   }
 }
 
-
 function App() {
   return (
     <div className="App">
@@ -154,8 +153,6 @@ function App() {
     </div>
   );
 }
-
-
 
 window.addEventListener("scroll", reveal);
 window.addEventListener("scroll", show);
