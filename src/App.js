@@ -100,7 +100,7 @@ function App() {
         <div className='card'>
         <section className='card-1'>
           <Card sx={{ maxWidth: 345 }}>
-            <CardActionArea href='#' target='_blank'>
+            <CardActionArea href='' target='_blank'>
             <CardMedia  component="img" height="140" image="https://res.cloudinary.com/dxgndie5o/image/upload/v1679728282/graph_t4uxku.png" alt="green iguana"/>
             <CardContent className='article-card'>
               <Typography gutterBottom variant="h5" component="div" color="white">
@@ -117,7 +117,7 @@ function App() {
         
         <section className='card-2'>
           <Card sx={{ maxWidth: 345 }}>
-            <CardActionArea href='#' target='_blank'>
+            <CardActionArea href='' target='_blank'>
             <CardMedia component="img" height="140" image="https://res.cloudinary.com/dxgndie5o/image/upload/v1679728282/graph_t4uxku.png" alt="green iguana"/>
             <CardContent className='article-card'>
               <Typography gutterBottom variant="h5" component="div" color="white">
@@ -134,7 +134,7 @@ function App() {
 
         <section className='card-3'>
           <Card sx={{ maxWidth: 345 }}>
-            <CardActionArea href='#' target='_blank'>
+            <CardActionArea href='' target='_blank'>
             <CardMedia component="img" height="140" image="https://res.cloudinary.com/dxgndie5o/image/upload/v1679728282/graph_t4uxku.png" alt="green iguana"/>
             <CardContent className='article-card'>
               <Typography gutterBottom variant="h5" component="div" color="white">
