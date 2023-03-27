@@ -54,7 +54,7 @@ function App() {
             <span className='links'>
               <a className='home' href='C:\Users\riley\OneDrive\Desktop\personal web\my-webpage\src\App.js'>Home</a> &nbsp; 
               <a className='blogpage' href='C:\Users\riley\OneDrive\Desktop\personal web\my-webpage\src\BlogPage.js'>Blog</a> &nbsp; 
-              <a className='resume-button' href='C:\Users\riley\OneDrive\Desktop\personal web\my-webpage\public\Riley_Resume.pdf' target='_blank' rel=''>Resume</a> &nbsp; 
+              <a className='resume-button' href='C:\Users\riley\OneDrive\Desktop\personal web\my-webpage\public\Riley_Resume.pdf' target='_blank' rel='noreferrer'>Resume</a> &nbsp; 
               <a className='email' href='mailto:riley9460@gmail.com'>Contact me</a>
             </span>
           </nav>
