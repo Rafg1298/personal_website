@@ -5,15 +5,9 @@ body{
   color: rgba(255, 255, 255, 0.925);
 }
 
-@media only screen and (max-width: 1200px){
-  /*Tablets [601px -> 1200px]*/
-}
-@media only screen and (max-width: 600px){
-  /*Big smartphones [426px -> 600px]*/
-}
-@media only screen and (max-width: 425px){
-  /*Small smartphones [325px -> 425px]*/
-}
+/********* Landscape screens *********/
+
+@media only screen and (orientation: landscape){
 
 /* Top bar and welcome section */
 
@@ -87,7 +81,7 @@ a:visited, a{
 
 .intro{
   font-weight:lighter;
-  padding-left: 38%;
+  padding-left: 40%;
   padding-right: 6%;
   font-size:large;
   position: inherit;
@@ -95,7 +89,7 @@ a:visited, a{
 
 /* Body of the page */
 
-.summary{
+  .summary{
   font-size: large;
   position: absolute;
   margin-top: 16%;
@@ -106,67 +100,227 @@ a:visited, a{
   transition: 2s all ease;
   }
 
-.summary.active{
-  transform: translateY(0);
-  opacity: 1;
-}
+  .summary.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
 
-
-.portrait{
-  display: block;
-  position: absolute;
-  margin-left: 45%;
-  border-radius: 20%;
-}
-
-.me{
-  font-weight: bold;
-  display: inline;
-  text-decoration: underline;
-}
-
-.text{
-  display: inline;
-}
-
+  .portrait{
+    display: block;
+    position: absolute;
+    margin-left: 45%;
+    border-radius: 20%;
+  }
+  
+  .me{
+    font-weight: bold;
+    display: inline;
+    text-decoration: underline;
+  }
+  
+  .text{
+    display: inline;
+  }
 
 /* Article Cards */
 
-.article-card{
-  background-color: #1D1F20;
-}
+  .article-card{
+    background-color: #1D1F20;
+  }
 
-.card{
-  display: flex;
-  margin-top: 50%;
-  margin-left: 25%;
-  margin-bottom: 1%;
-  transform: translateY(150px);
-  opacity: 0;
-  transition: 2s all ease;
-}
+  .card{
+    display: flex;
+    margin-top: 50%;
+    margin-left: 25%;
+    margin-bottom: 1%;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
 
-.card.active{
+  .card.active{
   transform: translateY(0);
   opacity: 1;
-}
+  }
 
-.card-1, .card-2, .card-3{
-  margin-left: 2%;
-  padding: 5px;
-  border: 1px solid #080b0c;
-}
+  .card-1, .card-2, .card-3{
+    margin-left: 2%;
+    padding: 5px;
+    border: 1px solid #080b0c;
+  }
 
 /* Sidebar */
+
 .social{
   position: fixed;
-  width: 2%;
+  width: 1.5%;
   margin-left: 1%;
-  margin-top: 10%;
+  margin-top: 15%;
   color: rgb(255, 255, 255);
 }
 
 .linked:hover, .git:hover{
   opacity: 0.5;
   transition-duration: 0.3s;
+}
+}
+
+/********** Portrait screens **********/
+
+@media all and (orientation: portrait){
+
+/* Top bar and welcome section */
+
+.logo{
+  width: 2%;
+  height:auto;
+  margin-left: 1.7%;
+}
+
+.logo:hover{
+  opacity: 0.9;
+  color: #1D1F20;
+  border-radius: 7%;
+  transition-duration: 0.3s;
+  
+}
+
+.navbar{
+  text-align: right;
+  margin-top: 2%;
+  margin-right: 2%;
+  color: deepskyblue;
+}
+
+.resume-button, .email{
+  border-style: solid;
+  border-width: 0.05cm;
+  border-radius: 7%;
+  padding: 0.25%;
+  text-decoration: none;
+}
+
+.resume-button:hover, .email:hover{
+  background-color: rgba(0, 191, 255, 0.616);
+  opacity: 0.9;
+  color: #1D1F20;
+  border-radius: 7%;
+  transition-duration: 0.3s;
+}
+
+a:visited, a{
+  text-decoration: none;
+  font-size: large;  
+  color: inherit;
+}
+
+.h5{
+  margin-right: 2%;
+}
+
+.welcome{
+  display: block;
+  text-align: center;
+  font-size: x-large;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.925);
+  margin-top: 15%;
+  padding-right: 40%;
+
+  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 3s; /* Firefox < 16 */
+        -ms-animation: fadein 3s; /* Internet Explorer */
+         -o-animation: fadein 3s; /* Opera < 12.1 */
+            animation: fadein 3s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.intro{
+  font-weight:lighter;
+  padding-left: 17%;
+  padding-right: 25%;
+  font-size:large;
+  position: absolute;
+}
+
+/* Body of the page */
+
+  .summary{
+  font-size: large;
+  position: absolute;
+  margin-top: 25%;
+  padding-right: 50%;
+  margin-left: 20%;
+  }
+
+  .portrait{
+    display: block;
+    position: absolute;
+    margin-left: 45%;
+    border-radius: 20%;
+  }
+  
+  .me{
+    font-weight: bold;
+    display: inline;
+    text-decoration: underline;
+  }
+  
+  .text{
+    display: inline;
+  }
+
+/* Article Cards */
+
+  .article-card{
+      background-color: #1D1F20;
+    }
+
+  .card{
+    display: flex;
+    margin-top: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 1%;
+  }
+
+  .card-1, .card-2, .card-3{
+    margin-left: 2%;
+    padding: 5px;
+    border: 1px solid #080b0c;
+  }
+
+
+/* Sidebar */
+
+.social{
+  position: fixed;
+  width: 2.5%;
+  margin-left: 1.2%;
+  margin-top: 98%;
+  color: rgb(255, 255, 255);
+}
+
+.linked:hover, .git:hover{
+  opacity: 0.5;
+  transition-duration: 0.3s;
+}
+}
+
+
+
+@media only screen and (max-width: 600px){
+  /*Big smartphones [426px -> 600px]*/
+  
+
+}
+
+@media only screen and (max-width: 425px){
+  /*Small smartphones [325px -> 425px]*/
+
+
 }
