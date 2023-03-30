@@ -23,6 +23,7 @@ function show() {
   }
 }
 
+/*
 function reveal() {
   var reveals = document.querySelectorAll('.card');
 
@@ -38,6 +39,7 @@ function reveal() {
     }
   }
 }
+*/
 
 function App() {
   return (
@@ -52,8 +54,8 @@ function App() {
             <img align='left' className='logo' src='https://res.cloudinary.com/dxgndie5o/image/upload/v1679644058/unnamed_lx4swa.png' alt='logo' /> 
             <span className='links'>
               <a className='home' href='C:\Users\riley\OneDrive\Desktop\personal web\my-webpage\src\App.js'>Home</a> &nbsp; 
-              <a className='blogpage' href='C:\Users\riley\OneDrive\Desktop\personal web\my-webpage\src\BlogPage.js'>Blog</a> &nbsp; 
-              <a className='resume-button' href='C:\Users\riley\OneDrive\Desktop\personal web\my-webpage\public\Riley_Resume.pdf' target='_blank' rel='noreferrer'>Resume</a> &nbsp; 
+              {/*<a className='blogpage' href='C:\Users\riley\OneDrive\Desktop\personal web\my-webpage\src\BlogPage.js'>Blog</a> &nbsp;  */}
+              <a className='resume-button' href='src\Riley_Resume_updated.pdf' download>Resume</a> &nbsp; 
               <a className='email' href='mailto:riley9460@gmail.com'>Contact me</a>
             </span>
           </nav>
@@ -92,10 +94,7 @@ function App() {
             35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
             </a>
         </div>
-        <div className='Blog'>
-        </div>
-      </body>
-      <footer>
+        {/* 
         <div className='card'>
         <section className='card-1'>
           <Card sx={{ maxWidth: 345 }}>
@@ -148,13 +147,16 @@ function App() {
           </Card> 
         </section>
         </div>
-       
-        </footer>
+      */}
+      </body>
+      <footer>
+  </footer>
+
     </div>
   );
 }
 
-window.addEventListener("scroll", reveal);
+/* window.addEventListener("scroll", reveal); */
 window.addEventListener("scroll", show);
 
 export default App;
