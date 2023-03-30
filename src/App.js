@@ -56,7 +56,7 @@ function App() {
             <span className='links'>
               <a className='home' href='C:\Users\riley\OneDrive\Desktop\personal web\my-webpage\src\App.js'>Home</a> &nbsp; 
               {/*<a className='blogpage' href='C:\Users\riley\OneDrive\Desktop\personal web\my-webpage\src\BlogPage.js'>Blog</a> &nbsp;  */}
-              <a className='resume-button' href='src\Riley_Resume_updated.pdf' download='riley_resume.pdf' target='_blank'>Resume</a> &nbsp; 
+              <a className='resume-button' href='/Riley_Resume_updated.pdf' target='_blank' rel='norferrer'>Resume</a> &nbsp; 
               <a className='email' href='mailto:riley9460@gmail.com'>Contact me</a>
             </span>
           </nav>
