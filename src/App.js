@@ -1,11 +1,8 @@
 import './App.css';
-import './BlogPage';
-/* import Card from '@mui/material/Card';
+import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material'; 
- */
 
 
 function show() {
@@ -24,7 +21,7 @@ function show() {
   }
 }
 
-/*
+
 function reveal() {
   var reveals = document.querySelectorAll('.card');
 
@@ -40,7 +37,7 @@ function reveal() {
     }
   }
 }
-*/
+
 
 function App() {
   return (
@@ -54,32 +51,13 @@ function App() {
           <nav className="navbar">
             <img align='left' className='logo' src='https://res.cloudinary.com/dxgndie5o/image/upload/v1679644058/unnamed_lx4swa.png' alt='logo' /> 
             <span className='links'>
-              <a className='home' href='C:\Users\riley\OneDrive\Desktop\personal web\my-webpage\src\App.js'>Home</a> &nbsp; 
+              {/*<a className='home' href='C:\Users\riley\OneDrive\Desktop\personal web\my-webpage\src\App.js'>Home</a> &nbsp; */}
               {/*<a className='blogpage' href='C:\Users\riley\OneDrive\Desktop\personal web\my-webpage\src\BlogPage.js'>Blog</a> &nbsp;  */}
-              <a className='resume-button' href='src\Riley_Resume_c.pdf' download='riley_resume.pdf'>Resume</a> &nbsp; 
+              {/*<a className='resume-button' href='src\Riley_Resume_c.pdf' download='riley_resume.pdf'>Resume</a> &nbsp; */}
               <a className='email' href='mailto:riley9460@gmail.com'>Contact me</a>
             </span>
           </nav>
-          <span className='welcome'>
-            <h5 className='h5'>Hi there, my name is</h5>
-            <h2>Riley Golden</h2>
-            <p className='intro'>I am currently a Data Science student at Western Governors University, learning and posting my projects consisting of web design to data jupyter notebooks here on my website!</p>
-            
-            </span> 
-        </header>
-        <div className='about'>
-          <div className='summary'>
-          <img className='portrait' src='https://res.cloudinary.com/dxgndie5o/image/upload/c_limit,q_82,r_0,w_328/v1679037684/itsme-min_s38bgg.jpg' alt='me in hawaii'/> 
-          <h2 className='me'>About me</h2>
-          <span className='text'>
-            <p>Current Data Science student based in Washington state, with 2 years of web development experience working on projects.</p>
-            <p>I started learning coding as a whole through web development first, and transitioned to more data-centric development after I took a data science class.</p>
-            <p>I really enjoy data-based projects because there are datasets for everything, from daily prices of a fruit to most streamed songs of all time.  </p> 
-            <p>In my free time, I enjoy other hobbies such as cooking, playing with my pets, video games, and snowboarding.</p> 
-            </span>
-          </div>
-        </div>
-        <div className='social' >
+          <div className='social' >
           <a className='linked' href='https://www.linkedin.com/in/rileygolden/' target='_blank' rel='noreferrer'>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill='currentcolor' d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 
         32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 
@@ -95,60 +73,82 @@ function App() {
             35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
             </a>
         </div>
-        {/* 
-        <div className='card'>
-        <section className='card-1'>
-          <Card sx={{ maxWidth: 345 }}>
-            <CardActionArea href='' target='_blank'>
-            <CardMedia  component="img" height="140" image="https://res.cloudinary.com/dxgndie5o/image/upload/v1679728282/graph_t4uxku.png" alt="green iguana"/>
-            <CardContent className='article-card'>
-              <Typography gutterBottom variant="h5" component="div" color="white">
-                  Lizard
-              </Typography>
-              <Typography variant="body2" color="white">
-                  Lizards are a widespread group of squamate reptiles, with over 6,000
-                  species, ranging across all continents except Antarctica
-              </Typography>
-            </CardContent>
-            </CardActionArea>
-          </Card>
-        </section>
-        
-        <section className='card-2'>
-          <Card sx={{ maxWidth: 345 }}>
-            <CardActionArea href='' target='_blank'>
-            <CardMedia component="img" height="140" image="https://res.cloudinary.com/dxgndie5o/image/upload/v1679728282/graph_t4uxku.png" alt="green iguana"/>
-            <CardContent className='article-card'>
-              <Typography gutterBottom variant="h5" component="div" color="white">
-                  Lizard
-              </Typography>
-              <Typography variant="body2" color="white">
-                  Lizards are a widespread group of squamate reptiles, with over 6,000
-                  species, ranging across all continents except Antarctica
-              </Typography>
-            </CardContent>
-            </CardActionArea>
-          </Card>
-        </section>
-
-        <section className='card-3'>
-          <Card sx={{ maxWidth: 345 }}>
-            <CardActionArea href='' target='_blank'>
-            <CardMedia component="img" height="140" image="https://res.cloudinary.com/dxgndie5o/image/upload/v1679728282/graph_t4uxku.png" alt="green iguana"/>
-            <CardContent className='article-card'>
-              <Typography gutterBottom variant="h5" component="div" color="white">
-                  Lizard
-              </Typography>
-              <Typography variant="body2" color="white">
-                  Lizards are a widespread group of squamate reptiles, with over 6,000
-                  species, ranging across all continents except Antarctica
-              </Typography>
-            </CardContent>
-            </CardActionArea>
-          </Card> 
-        </section>
+          <span className='welcome'>
+            <img className='portrait' src='https://res.cloudinary.com/dxgndie5o/image/upload/c_limit,q_82,r_0,w_328/v1679037684/itsme-min_s38bgg.jpg' alt='me in hawaii'/>
+            <h5 className='h5'>Hi there, my name is</h5>
+            <h2>Riley Golden</h2>
+            <p className='intro'>I am currently a Data Science student at Western Governors University, learning and posting my projects consisting of web design to data jupyter notebooks here on my website!</p>
+            
+            </span> 
+        </header>
+        <div className='about'>
+          <div className='summary'>
+          <img className='airplane-pic' src='https://res.cloudinary.com/dxgndie5o/image/upload/v1682584606/IMG-1408_wcm9iz.jpg' alt='outside of a plane'/>
+          <h2 className='me'>About me</h2>
+          <div className='text'>
+            <p>Current Data Science student based in Washington state, with 2 years of web development experience working on projects.</p>
+            <p>I started learning coding as a whole through web development first, and transitioned to more data-centric development after I took a data science class that showed me the possibility of data visualizations.</p>
+            <p>I really enjoy data-based projects because there are datasets for everything, from daily prices of a fruit to most streamed songs of all time.  </p> 
+            <p>In my free time, I enjoy other hobbies such as traveling, cooking, playing with my pets, video games, and snowboarding.</p> 
+            </div>
+          </div>
         </div>
-      */}
+        
+        <h2 className='card-title'>Projects</h2>
+        <div className='card'>
+          <section className='card-1'>
+            <Card sx={{ maxWidth: 345 }}>
+              <CardActionArea href='' target='_blank'>
+              <CardContent className='article-card'>
+                <Typography gutterBottom variant="h5" component="div" color="white">
+                Stock Ticker Analysis
+                </Typography>
+                <Typography variant="body2" color="white">
+                Created a Python application that utilizes the Yfinance API to scrape the Yahoo finance website and print
+                out a list of current stock prices varying from open to close. Also used Plotly, Matplotlib and Pandas to 
+                visualize the stock from the day up to a month previous, and also
+                implemented an ARIMA model to predict how the stock will look the next day.
+                </Typography>
+              </CardContent>
+              </CardActionArea>
+            </Card>
+          </section>
+          
+          <section className='card-2'>
+            <Card sx={{ maxWidth: 345 }}>
+              <CardActionArea href='' target='_blank'>
+              <CardContent className='article-card'>
+                <Typography gutterBottom variant="h5" component="div" color="white">
+                Amazon Webpage Scraper
+                </Typography>
+                <Typography variant="body2" color="white">
+                Jupyter based application that scrapes and parses information for product data from Amazon, cleans the
+                data and provides a CSV list of the product, price, average rating, how many people rated it, and if the
+                product is in stock.
+                </Typography>
+              </CardContent>
+              </CardActionArea>
+            </Card>
+          </section>
+
+          <section className='card-3'>
+            <Card sx={{ maxWidth: 345 }}>
+              <CardActionArea href='' target='_blank'>
+              <CardContent className='article-card'>
+                <Typography gutterBottom variant="h5" component="div" color="white">
+                ReactJS App
+                </Typography>
+                <Typography variant="body2" color="white">
+                Designed a JavaScript application that utilizes the Spotify API to login into a Spotify account and search
+                through their music catalog. Utilized React to create an interactive front end with the ability to add songs 
+                from Spotify into a playlist.
+                </Typography>
+              </CardContent>
+              </CardActionArea>
+            </Card> 
+          </section>
+        </div>
+      
       </body>
       <footer>
       <p>Built & Designed by Riley Golden</p>
@@ -157,7 +157,7 @@ function App() {
   );
 }
 
-/* window.addEventListener("scroll", reveal); */
+window.addEventListener("scroll", reveal); 
 window.addEventListener("scroll", show);
 
 export default App;
